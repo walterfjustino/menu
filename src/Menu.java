@@ -15,9 +15,9 @@ public class Menu {
        
         
         try{
-             int opcao = menu.nextInt();
-            if(opcao == menu.nextInt()){
-                switch (opcao) {
+            int opcao = menu.nextInt();
+            if(opcao == menu.nextInt()){ //IF THE USER ENTERS ANY CHARACTER DIFFERENT FROM 
+                switch (opcao) {         // THE MENU NUMBERS LAUNCHES AN EXCEPTION  
                 case 1:
                 System.out.println("Opção 1 selecionada");
                     break;
