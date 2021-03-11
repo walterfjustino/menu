@@ -1,6 +1,7 @@
 ## Getting Started
-Menu de opções utilizando java application.
-Created an MENU of options using the Scanner with Visual Studio Code.
+
+- Menu de opções utilizando java application.
+- Created an MENU of options using the Scanner with Visual Studio Code.
 
 ## Folder Structure
 
