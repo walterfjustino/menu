@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
@@ -32,8 +32,10 @@ public class Menu {
     
 
     public static void main(String[] args) throws Exception{
+        
+
         int opcao; 
-      
+        try{
 
         Scanner menu = new Scanner(System.in);
      
@@ -55,12 +57,15 @@ public class Menu {
                             break;  
                         
                         default:
-                        if(opcao <= 0 || opcao >= 5 ) 
+                        if(opcao <= 0 || opcao >= 5) 
                           System.out.println("Opção inválida selecionada"); 
                             break;
                     }                     
            } while(opcao != 4);    
            menu.close();
+            }catch(InputMismatchException e){
+                throw new Exception ("Não é permitido digitar Caracteres!!!");
+            }
         } 
     }
 
